@@ -45,7 +45,13 @@
             this.modifierUpDownSelect = new System.Windows.Forms.NumericUpDown();
             this.modifierInputLabel = new System.Windows.Forms.Label();
             this.rollButton = new System.Windows.Forms.Button();
+            this.selectNumberOfDiceLable = new System.Windows.Forms.Label();
+            this.selectNumberDiceUpDown = new System.Windows.Forms.NumericUpDown();
+            this.individualRollResultsLabel = new System.Windows.Forms.Label();
+            this.totalRollResultLabel = new System.Windows.Forms.Label();
+            this.resetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.modifierUpDownSelect)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectNumberDiceUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // greetingText
@@ -54,7 +60,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.greetingText.AutoSize = true;
             this.greetingText.Font = new System.Drawing.Font("Book Antiqua", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.greetingText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.greetingText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(175)))));
             this.greetingText.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.greetingText.Location = new System.Drawing.Point(131, 9);
             this.greetingText.Name = "greetingText";
@@ -210,7 +216,7 @@
             this.advantageDisadvantageLabel.AutoSize = true;
             this.advantageDisadvantageLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.advantageDisadvantageLabel.ForeColor = System.Drawing.Color.White;
-            this.advantageDisadvantageLabel.Location = new System.Drawing.Point(276, 294);
+            this.advantageDisadvantageLabel.Location = new System.Drawing.Point(276, 351);
             this.advantageDisadvantageLabel.Name = "advantageDisadvantageLabel";
             this.advantageDisadvantageLabel.Size = new System.Drawing.Size(317, 19);
             this.advantageDisadvantageLabel.TabIndex = 11;
@@ -221,7 +227,7 @@
             this.advantageRadioButton.AutoSize = true;
             this.advantageRadioButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.advantageRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.advantageRadioButton.Location = new System.Drawing.Point(280, 338);
+            this.advantageRadioButton.Location = new System.Drawing.Point(280, 380);
             this.advantageRadioButton.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.advantageRadioButton.Name = "advantageRadioButton";
             this.advantageRadioButton.Size = new System.Drawing.Size(101, 23);
@@ -235,7 +241,7 @@
             this.disadvantageRadioButton.AutoSize = true;
             this.disadvantageRadioButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.disadvantageRadioButton.ForeColor = System.Drawing.Color.Red;
-            this.disadvantageRadioButton.Location = new System.Drawing.Point(474, 338);
+            this.disadvantageRadioButton.Location = new System.Drawing.Point(474, 380);
             this.disadvantageRadioButton.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.disadvantageRadioButton.Name = "disadvantageRadioButton";
             this.disadvantageRadioButton.Size = new System.Drawing.Size(119, 23);
@@ -247,7 +253,7 @@
             // modifierUpDownSelect
             // 
             this.modifierUpDownSelect.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifierUpDownSelect.Location = new System.Drawing.Point(543, 381);
+            this.modifierUpDownSelect.Location = new System.Drawing.Point(543, 423);
             this.modifierUpDownSelect.Margin = new System.Windows.Forms.Padding(10);
             this.modifierUpDownSelect.Maximum = new decimal(new int[] {
             40,
@@ -269,19 +275,19 @@
             this.modifierInputLabel.AutoSize = true;
             this.modifierInputLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modifierInputLabel.ForeColor = System.Drawing.Color.White;
-            this.modifierInputLabel.Location = new System.Drawing.Point(271, 383);
+            this.modifierInputLabel.Location = new System.Drawing.Point(276, 423);
             this.modifierInputLabel.Margin = new System.Windows.Forms.Padding(10);
             this.modifierInputLabel.Name = "modifierInputLabel";
             this.modifierInputLabel.Size = new System.Drawing.Size(252, 19);
             this.modifierInputLabel.TabIndex = 15;
-            this.modifierInputLabel.Text = "Select  the applicable roll modifiet: ";
+            this.modifierInputLabel.Text = "Select  the applicable roll modifier: ";
             // 
             // rollButton
             // 
             this.rollButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.rollButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.rollButton.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rollButton.Location = new System.Drawing.Point(280, 438);
+            this.rollButton.Location = new System.Drawing.Point(280, 480);
             this.rollButton.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
             this.rollButton.Name = "rollButton";
             this.rollButton.Size = new System.Drawing.Size(313, 40);
@@ -289,12 +295,95 @@
             this.rollButton.Text = "ROLL!";
             this.rollButton.UseVisualStyleBackColor = false;
             // 
+            // selectNumberOfDiceLable
+            // 
+            this.selectNumberOfDiceLable.AutoSize = true;
+            this.selectNumberOfDiceLable.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectNumberOfDiceLable.ForeColor = System.Drawing.Color.White;
+            this.selectNumberOfDiceLable.Location = new System.Drawing.Point(276, 304);
+            this.selectNumberOfDiceLable.Margin = new System.Windows.Forms.Padding(10);
+            this.selectNumberOfDiceLable.Name = "selectNumberOfDiceLable";
+            this.selectNumberOfDiceLable.Size = new System.Drawing.Size(225, 19);
+            this.selectNumberOfDiceLable.TabIndex = 17;
+            this.selectNumberOfDiceLable.Text = "How many dice are you rolling?";
+            // 
+            // selectNumberDiceUpDown
+            // 
+            this.selectNumberDiceUpDown.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectNumberDiceUpDown.Location = new System.Drawing.Point(543, 302);
+            this.selectNumberDiceUpDown.Margin = new System.Windows.Forms.Padding(10);
+            this.selectNumberDiceUpDown.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.selectNumberDiceUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.selectNumberDiceUpDown.Name = "selectNumberDiceUpDown";
+            this.selectNumberDiceUpDown.Size = new System.Drawing.Size(50, 27);
+            this.selectNumberDiceUpDown.TabIndex = 18;
+            this.selectNumberDiceUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.selectNumberDiceUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // individualRollResultsLabel
+            // 
+            this.individualRollResultsLabel.AutoSize = true;
+            this.individualRollResultsLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.individualRollResultsLabel.ForeColor = System.Drawing.Color.White;
+            this.individualRollResultsLabel.Location = new System.Drawing.Point(312, 560);
+            this.individualRollResultsLabel.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.individualRollResultsLabel.MaximumSize = new System.Drawing.Size(800, 0);
+            this.individualRollResultsLabel.Name = "individualRollResultsLabel";
+            this.individualRollResultsLabel.Size = new System.Drawing.Size(259, 26);
+            this.individualRollResultsLabel.TabIndex = 19;
+            this.individualRollResultsLabel.Text = "Individual Results of the Roll";
+            this.individualRollResultsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totalRollResultLabel
+            // 
+            this.totalRollResultLabel.AutoSize = true;
+            this.totalRollResultLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalRollResultLabel.ForeColor = System.Drawing.Color.White;
+            this.totalRollResultLabel.Location = new System.Drawing.Point(360, 671);
+            this.totalRollResultLabel.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.totalRollResultLabel.MaximumSize = new System.Drawing.Size(500, 0);
+            this.totalRollResultLabel.Name = "totalRollResultLabel";
+            this.totalRollResultLabel.Size = new System.Drawing.Size(150, 26);
+            this.totalRollResultLabel.TabIndex = 20;
+            this.totalRollResultLabel.Text = "Total Roll Result";
+            this.totalRollResultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // resetButton
+            // 
+            this.resetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.resetButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.resetButton.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.Location = new System.Drawing.Point(342, 793);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(3, 20, 3, 40);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(200, 40);
+            this.resetButton.TabIndex = 21;
+            this.resetButton.Text = "Reset!";
+            this.resetButton.UseVisualStyleBackColor = false;
+            // 
             // D20RollerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(850, 882);
+            this.Controls.Add(this.resetButton);
+            this.Controls.Add(this.totalRollResultLabel);
+            this.Controls.Add(this.individualRollResultsLabel);
+            this.Controls.Add(this.selectNumberDiceUpDown);
+            this.Controls.Add(this.selectNumberOfDiceLable);
             this.Controls.Add(this.rollButton);
             this.Controls.Add(this.modifierInputLabel);
             this.Controls.Add(this.modifierUpDownSelect);
@@ -317,6 +406,7 @@
             this.Name = "D20RollerMain";
             this.Text = "D20 Roller";
             ((System.ComponentModel.ISupportInitialize)(this.modifierUpDownSelect)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectNumberDiceUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,6 +431,11 @@
         private System.Windows.Forms.NumericUpDown modifierUpDownSelect;
         private System.Windows.Forms.Label modifierInputLabel;
         private System.Windows.Forms.Button rollButton;
+        private System.Windows.Forms.Label selectNumberOfDiceLable;
+        private System.Windows.Forms.NumericUpDown selectNumberDiceUpDown;
+        private System.Windows.Forms.Label individualRollResultsLabel;
+        private System.Windows.Forms.Label totalRollResultLabel;
+        private System.Windows.Forms.Button resetButton;
     }
 }
 
