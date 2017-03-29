@@ -1,1 +1,9 @@
 D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\bin\Debug\DiceRollingApplication.exe.config
+D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\bin\Debug\DiceRollingApplication.exe
+D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\bin\Debug\DiceRollingApplication.pdb
+D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\obj\Debug\DiceRollingApplication.csprojResolveAssemblyReference.cache
+D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\obj\Debug\DiceRollingApplication.D20RollerMain.resources
+D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\obj\Debug\DiceRollingApplication.Properties.Resources.resources
+D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\obj\Debug\DiceRollingApplication.csproj.GenerateResource.Cache
+D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\obj\Debug\DiceRollingApplication.exe
+D:\John\Documents\ProgrammingProjects\DiceRollingApplication\DiceRollingApplication\obj\Debug\DiceRollingApplication.pdb
